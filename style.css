@@ -347,6 +347,13 @@ footer {
 }
 
 /* bar-menu media query */
+@media only screen and (device-width: 375px) and (device-height: 667px) and (orientation: portrait) {
+  header {
+    height: 667px;
+  }
+}
+
+
 @media only screen and (max-width: 980px) {
   nav {
     background: var(--primary-background-color);
@@ -382,12 +389,6 @@ footer {
     display: block;
     top: 39px;
     width: 100%;
-  }
-}
-
-@media all and (device-width: 375px) and (device-height: 667px) and (orientation: portrait) {
-  header {
-    height: 667px;
   }
 }
 
