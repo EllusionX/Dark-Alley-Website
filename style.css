@@ -20,13 +20,14 @@ html {
   font-size: 14px;
   height: 100%;
   width: 100%;
-  max-width: 1720px;
 
   display: flex;
   flex-direction: column;
 
   color: var(--primary-font-color);
   background: var(--primary-background-color);
+
+  overflow-x: hidden;
 }
 
 h1,
@@ -383,3 +384,11 @@ footer {
     width: 100%;
   }
 }
+
+@media all and (device-width: 375px) and (device-height: 667px) and (orientation: portrait) {
+  header {
+    height: 667px;
+  }
+}
+
+
