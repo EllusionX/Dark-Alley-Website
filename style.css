@@ -347,9 +347,9 @@ footer {
 }
 
 /* bar-menu media query */
-@media only screen and (device-width: 375px) and (device-height: 667px) and (orientation: portrait) {
+@media all and (device-width: 414px) and (device-height: 736px) and (orientation: portrait) {
   header {
-    height: 667px;
+    height: 736px;
   }
 }
 
