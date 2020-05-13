@@ -347,13 +347,6 @@ footer {
 }
 
 /* bar-menu media query */
-@media all and (device-width: 414px) and (device-height: 736px) and (orientation: portrait) {
-  header {
-    height: 736px;
-  }
-}
-
-
 @media only screen and (max-width: 980px) {
   nav {
     background: var(--primary-background-color);
