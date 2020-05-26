@@ -140,7 +140,7 @@ nav,
   width: 100%;
   text-align: center;
   border-bottom: 3px solid;
-  border-image-source: linear-gradient(
+  border-image-source: -webkit-linear-gradient(
     45deg,
     rgb(0, 143, 104),
     rgb(250, 224, 66)
