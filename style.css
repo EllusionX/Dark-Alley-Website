@@ -141,7 +141,7 @@ nav,
   text-align: center;
   border-bottom: 3px solid;
   background: -webkit-linear-gradient(45deg, rgb(0, 143, 104), rgb(250, 224, 66));
-  -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
   padding-bottom: 0.6em;
 }
