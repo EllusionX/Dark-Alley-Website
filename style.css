@@ -57,7 +57,6 @@ a {
 /* reuse codes  */
 .live-music-content,
 .spice-it-up-container,
-.theme-drink-list ul li,
 footer {
   display: flex;
   flex-direction: column;
@@ -177,8 +176,11 @@ nav,
 }
 
 .spice-it-up-container {
-  height: fit-content;
-  background: var(--secondary-background-color);
+  /* background: var(--secondary-background-color); */
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.3)),
+  url("https://images.pexels.com/photos/1660560/pexels-photo-1660560.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940")
+    no-repeat top;
+    background-size: cover;
   text-align: center;
 }
 
@@ -200,69 +202,8 @@ nav,
   width: 60%;
 }
 
-.theme-drink-container {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding-bottom: 3em;
-  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 1)),
-    url("https://images.pexels.com/photos/5412/water-blue-ocean.jpg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940")
-      no-repeat;
-  background-size: cover;
-}
-
-.theme-title {
-  width: 90%;
-}
-
-.theme-title h3 {
-  margin: 0.5em 0;
-}
-
-.theme-title .current-theme-text {
-  margin: 0.5em 0;
-  padding-bottom: 0.5em;
-  border-bottom: 3px solid var(--primary-font-color);
-}
-
-.theme-drink-list ul {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  justify-content: center;
-  align-items: center;
-  margin: 5em 0;
-  gap: 1.5em;
-  width: 90%;
-  margin: 0 auto;
-}
-
-.theme-drink-list ul li {
-  position: relative;
-}
-
-.theme-drink-list img {
-  width: 90%;
-  max-width: 100%;
-  height: auto;
-}
-
-.theme-drink-list .drink-name {
-  width: 90%;
-  background: var(--drink-name-background-color);
-  font-size: 1.5em;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.theme-drink-list span {
-  padding: 0.3em;
-}
-
 .find-us-content {
-  width: 70%;
+  width: 80%;
   margin: auto;
   padding: 2em;
 }
@@ -339,6 +280,14 @@ footer {
   color: var(--primary-font-color);
 }
 
+
+/* media query section */
+@media only screen and (max-width: 1040px) {
+  .live-music-content {
+    padding: 2em;
+  }
+}
+
 /* bar-menu media query */
 @media only screen and (max-width: 980px) {
   nav {
@@ -375,6 +324,31 @@ footer {
     display: block;
     top: 39px;
     width: 100%;
+  }
+
+  .find-us-content {
+    width: 100%;
+  }
+
+  footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  .copyright {
+    margin: 1em;
+  }
+
+  .footer-links ul {
+    flex-direction: column;
+    margin-top: 2em ;
+  }
+
+  .footer-links ul li {
+    border-right: none;
+    margin: 0.5em 0;
   }
 }
 
