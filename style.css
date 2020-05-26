@@ -65,8 +65,8 @@ footer {
 }
 
 .grid-two-column {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(370px, 1fr));
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(370px, 1fr));
 }
 
 /* coding */
@@ -82,6 +82,7 @@ header {
   display: flex;
   flex-direction: column;
 }
+
 
 nav,
 .header-main {
@@ -109,6 +110,7 @@ nav,
 .nav-container ul li {
   margin: 1em;
   font-size: 1.4em;
+  text-align: right;
 }
 
 .header-main {
@@ -170,17 +172,14 @@ nav,
 
 .live-music-img {
   background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
-    url("https://images.pexels.com/photos/1652353/pexels-photo-1652353.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940")
-      no-repeat center;
+    url("https://images.pexels.com/photos/1652353/pexels-photo-1652353.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940") no-repeat center;
   background-size: cover;
 }
 
 .spice-it-up-container {
-  /* background: var(--secondary-background-color); */
   background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.3)),
-  url("https://images.pexels.com/photos/1660560/pexels-photo-1660560.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940")
-    no-repeat top;
-    background-size: cover;
+    url("https://images.pexels.com/photos/1660560/pexels-photo-1660560.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940") no-repeat top;
+  background-size: cover;
   text-align: center;
 }
 
@@ -244,8 +243,7 @@ nav,
 
 .find-us-map-img {
   background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2)),
-    url("https://images.pexels.com/photos/408503/pexels-photo-408503.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940")
-      no-repeat center;
+    url("https://images.pexels.com/photos/408503/pexels-photo-408503.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940") no-repeat center;
   background-size: cover;
 }
 
@@ -294,6 +292,16 @@ footer {
     background: var(--primary-background-color);
     grid-template-columns: auto 1fr;
   }
+
+  .store-name {
+    font-size: 2.5em;
+  }
+
+  .header-main-text h3 {
+    font-size: 2em;
+    margin: 0.5em 0 0.3em 0;
+  }
+
   .bar-menu {
     display: flex;
     justify-content: flex-end;
@@ -319,7 +327,7 @@ footer {
     opacity: 0.7;
   }
 
-  #toggle:checked ~ .nav-container {
+  #toggle:checked~.nav-container {
     position: absolute;
     display: block;
     top: 39px;
@@ -343,7 +351,7 @@ footer {
 
   .footer-links ul {
     flex-direction: column;
-    margin-top: 2em ;
+    margin-top: 2em;
   }
 
   .footer-links ul li {
@@ -352,4 +360,11 @@ footer {
   }
 }
 
-
+@media only screen and (max-width: 320px) {
+  .spice-it-up-container {
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.3)),
+    url("https://images.pexels.com/photos/1660560/pexels-photo-1660560.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940") no-repeat top;
+  background-size: cover;
+  text-align: center;
+}
+}
